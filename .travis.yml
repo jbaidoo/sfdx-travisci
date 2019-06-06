@@ -11,7 +11,7 @@ before_install:
 - ./config --prefix=/usr/
 - make
 - make test
-- make install
+- sudo make install
 - mv /usr/bin/openssl /root/
 - ln -s /usr/local/ssl/bin/openssl /usr/bin/openssl
 - openssl version
