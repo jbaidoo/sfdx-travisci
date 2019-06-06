@@ -3,10 +3,10 @@ os: trusty
 cache: false
 env:
 - URL=https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+- OPENSSLZIP=https://www.openssl.org/source/openssl-1.1.1c.tar.gz
 before_install:
 - cd /usr/local/src
-- wget https://www.openssl.org/source/openssl-1.1.1c.tar.gz
-- tar -zxf openssl-1.1.1c.tar.gz
+- wget -qO- $OPENSSLZIP | tar -zxf openssl-1.1.1c
 - cd openssl-1.1.1c
 - ./config
 - make
