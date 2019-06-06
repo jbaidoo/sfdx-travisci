@@ -6,8 +6,9 @@ env:
 before_install:
 - mkdir openssl-1.1.1c
 - wget -qO- https://www.openssl.org/source/openssl-1.1.1c.tar.gz | tar -zxC openssl-1.1.1c
-- cd openssl-1.1.1c/openssl-1.1.1c/config
+- cd openssl-1.1.1c/openssl-1.1.1c
 - ls
+- ./config --prefix=/usr/
 - make
 - make test
 - make install
