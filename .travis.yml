@@ -5,6 +5,7 @@ env:
 - URL=https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
 before_install:
 - cd /usr/local/src
+- mkdir openssl-1.1.1c
 - wget -qO- https://www.openssl.org/source/openssl-1.1.1c.tar.gz | tar -zxf openssl-1.1.1c
 - cd openssl-1.1.1c
 - ./config
