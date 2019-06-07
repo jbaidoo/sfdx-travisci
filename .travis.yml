@@ -7,7 +7,6 @@ before_install:
 - sudo apt-get install php5-curl
 - sudo apt-get install make
 - curl https://www.openssl.org/source/openssl-1.1.1c.tar.gz | tar xz && cd openssl-1.1.1c && sudo ./config \
-    --debug \
     --prefix=/usr/local \
     --libdir=/lib \
     --openssldir=/usr/local/ssl && sudo make && sudo make install
